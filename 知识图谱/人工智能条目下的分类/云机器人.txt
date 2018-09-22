@@ -1,0 +1,69 @@
+云机器人（Cloud Robotics），是将云计算应用于机器人的技术。运用云计算的强大运算和存储能力，能够给机器人提供一个更智能的“大脑”。将机器人技与云计算相结合，可以增强单个机器人的能力，执行提供复杂功能任务和服务，同时，分布在世界各地、具有不同能力的机器人如何开展合作，共享信息资源，完成更大、更复杂的任务。这将广泛扩展机器人的应用领域，加速和简化机器人系统的开发过程，降低机器人的构造和使用成本，无论是家庭机器人，工业机器人，医疗机器人，都具有极其深远的意义。比如，在云端可以建立机器人的“大脑”，包含知识库，深度学习，云辅助的图像识别和语音识别，移动机器人 导航（如 Google 街景，语义环境模型，水下 环境模型库）, 大规模协作，任务规划，模块化机器人平台，职业机器人系统等  。
+
+
+== 应用 ==
+移动机器人
+Google 无人驾驶车就是一个典型的例子。Google 无人驾驶车采用云计算技术进行图像识别，环境模型（Street view）辅助系统导航，并同行不同个体的学习，将数据发回云端，不断增加知识库。将来，通过云计算，不同的车辆之间同行互相分享信息，才能在大城市大规模的有序高效的运行，每个车辆向云端实时传输自己的位置和环境信息，然后云端对不同车辆的任务分配和规划。
+
+医疗护理机器人
+家用机器人与智能家居
+老年辅助
+工业机机器人
+
+
+== 相关研究 ==
+中科大RoboCup2014
+2014年，中国科学技术大学与美国卡内基-梅隆大学机器人实机器人联合实验中，位于中国合肥的中科大“可佳”（KeJia）机器人与位于美国匹兹堡的卡内基-梅隆大学“可宝”（CoBot）机器人，借助云平台实现了远程合作与资源共享测试。实验中，云端向双方机器人提供多种知识源和数据源，“可佳”向“可宝”输送语义理解和自动规划服务，“可宝”向“可佳”输送大数据分析服务。借助于这些知识共享和远程合作，“可佳”与“可宝”分别完成了各自单独工作无法完成的测试任务。
+RoboEarth
+2011欧洲的瑞士联邦理工学院，德国慕尼黑科技大学，荷兰埃因霍温大学联合其他几个大学启动了 RoboEarth（机器人地球）研究计划。RoboEarth 是一个专门为机器人服务的网站，也是一个巨大的网络数据库系统，将基本的机器人技术同互联网的云计算系统相联接，利用远程数据中心提供的专业化智能服务，可有效实现机器人之间的知识分享，并提供执行各类复杂功能任务的服务。
+RoboBrain
+美国康奈尔大学和斯坦福主导，在美国军方和Google，微软等公司机构的支持的RoboBrain，将开发机器人大脑”Robo Brain，可以帮助机器人学习如何解决之前从未遇到的情况，不断学习增强技能。它借助于网络和云计算，帮助机器 人相互学习、共享知识，解决单个机器自我学习的局限性。
+COALAS
+ROS
+
+
+== 研究动向 ==
+A Survey of Research on Cloud Robotics and Automation. Ben Kehoe, Sachin Patil, Pieter Abbeel, Ken Goldberg. IEEE Transactions on Automation Science and Engineering (T-ASE): Special Issue on Cloud Robotics and Automation .
+Cloud Robotics and Automation A special issue of the IEEE Transactions on Automation Science and Engineering .
+COALAS-Poroject- Cognitive ambient assistive living system with Healthcare cluster. Farzin Deravi, Huosheng Hu,Ruijiao Li. 2013-2015 .
+New Research Center Aims to Develop Second Generation of Surgical Robots. John Markoff, NY Times, Oct, 2014
+The Robot in the Cloud: A Conversation With Ken Goldberg. Quentin Hardy, NY Times, Oct, 2014 
+Robots with Their Heads in the Clouds. Medium.com, from Aspen Ideas Festival. Ken Goldberg. Aug 2014
+RoboBrain marks the dawn of cloud robotics. August 2014 
+The RoboBrain Project. August 2014 .
+Robot-App Store.
+CoTeSys (Cognition for Technical Systems) TUM, DLR, LMU 2012-~2014 .
+Innovations in Cloud Robotics (Technical Insights), Industrial report. June 2014
+Cloud Robotics. The Atlantic, by Megan Garber. June 2014.
+DARPA on Cloud Robotics. April 2014.
+Big Push in Robotics Now Seems Imminent. The Economist. 29 March 2014.
+Robot Roundup. NPR Science Friday by Jordan Davidson. 26 March 2014.
+Open Call for References for new Survey Paper on Cloud Robotics and Automation.
+Moments that Stood out at SXSW: Panel on Cloud Robotics and Automation. Wall Street Journal, 11 March 2014.
+Panel on Cloud Robotics and Automation with James Kuffner of Google, Ayorkor Korsah of Ashesi Univ in Ghana, and Ken Goldberg, UC Berkeley. SXSW. Austin, TX, US. Mar 9, 2014.
+Building Knowledge-enabled Cloud Robotics Applications using the Ubiquitous Network Robot Platform. Moritz Tenorth, Koji Kamei, Norihiro Hagita . IEEE IROS, Tokyo. November 2013.
+Cloud-based human activity monitoring. Christian I. Penaloza etc. November 2013
+Robot Reinforcement Learning using Crowdsourced Rewards. Christian I. Penaloza, Sonia Chernova, Yasushi Mae and Tatsuo Arai. November 2013.
+2013 IEEE IROS Workshop on Cloud Robotics. Tokyo .November 2013.
+A Roadmap for U.S. Robotics From Internet to Robotics 2013 US-Robotics OA.
+What Is Cloud Robotics? by David Weldon, October 2013.
+TFCloud-Assuring the provenance of Cloud based Web Services. Huosheng Hu, Essex, UK. 2013
+Cloud Robotics in "Why We Love Robots." Short Documentary Film including section on Cloud Robotics. (Nominated for Emmy Award and winner of Botscar Award at Robot Film Festival), Oct 2013.
+CASE 2013 Workshop on Cloud Manufacturing and Automation. Aug 2013.
+Cloud-Based Robot Mapping. Vlad Usenko, Markus Waibel, Mohanarajah Gajamohan, Dominique Hunziker, Dhananjay Sathe, Mayank Singh. June 2013.
+Cloud-Based Robot Grasping with the Google Object Recognition Engine. Ben Kehoe, Akihiro Matsukawa, Sal Candido, James Kuffner, and Ken Goldberg. IEEE International Conference on Robotics and Automation. Karlsruhe, Germany. May 2013.
+NRI Workshop on Cloud Robotics: Challenges and Opportunities. February 2013. Report.
+Cloud Robotics and Automation: A Survey of Related Work. K. Goldberg and B. Kehoe. EECS Department, University of California, Berkeley, Technical Report UCB/EECS-2013-5. January 2013. [pdf]
+Towards Cloud Robotic System: A Case Study of Online Co-localization for Fair Resource Competence. Lujia Wang, Ming Liu, Max Q.-H, Meng. IEEE International Conference on Robotics and Biomimetics (ROBIO). December 2012
+"USD 10 Robot" Design Challenge Winners. Results of an open design competition for an affordable robot for K-12 education, 2012. Organized by the African Robotics Network.
+Toward Cloud-Based Grasping with Uncertainty in Shape: Estimating Lower Bounds on Achieving Force Closure with Zero-Slip Push Grasps. Ben Kehoe, Dmitry Berenson, Ken Goldberg. IEEE International Conference on Robotics and Automation. May 2012.
+Cloud Robotics: Connected to the Cloud, Robots Get Smarter Erico Guizzo. IEEE Spectrum. 2011.
+In June 2011, President Obama announced the U.S. National Robotics Initiative, earmarking over $70M for new research.
+CloudRobotics.com: ROS in Java for Robots using Android phones and tablets by Damon Kohler (Google Munich), 2011.
+RoboEarth - A World Wide Web for Robots Markus Waibel, Raffaello D'Andrea et al. , ETHZ, TUM, TU/e, 2011.
+Willow Garage and Google announce ROS Java Library for Cloud Robotics, 2011.
+Cloud-Enabled Humanoid Robots, James J. Kuffner. IEEE-RAS International Conference on Humanoid Robotics. 2010.
+Cloud robotics- 云机器人-科学网
+
+
+== 参考文献 ==

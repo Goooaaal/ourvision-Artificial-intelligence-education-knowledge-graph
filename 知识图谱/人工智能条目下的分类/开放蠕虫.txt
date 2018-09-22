@@ -1,0 +1,14 @@
+开放蠕虫（OpenWorm）是一项旨在从细胞层面在电脑上模拟秀丽隐杆线虫（Caenorhabditis elegans）的国际性开放科学项目。 尽管该项目的长远目标是模拟整个秀丽隐杆线虫的全部959个细胞，第一阶段的计划是建立包含302个神经元和95个肌肉细胞的模型来模拟蠕虫运动。这种自底向上的模拟是开放蠕虫社区追求的目标。目前，此项目的物理引擎Sibernetic已经建好，神经连接组和肌肉细胞也已创建为NeuroML格式。整个蠕虫的三维解剖模型可以通过浏览器自由查看。开放蠕虫项目也参与了“Geppetto模拟框架”的开发，这是一个为开发有机体的整体建模而创设的多重算法、多尺度的模拟平台。
+
+
+== 参考文献 ==
+
+
+== 外部链接 ==
+Homepage: Openworm
+OpenWorm community
+Milestones.
+Sibernetic
+Models
+OpenWorm browser
+Geppetto

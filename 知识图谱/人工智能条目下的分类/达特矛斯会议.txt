@@ -1,0 +1,38 @@
+达特矛斯夏季人工智慧研究计划（英语：Dartmouth Summer Research Project on Artificial Intelligence）由约翰·麦卡锡等人于1956年8月31日发起，旨在召集志同道合的人共同讨论“人工智能”（此定义正是在那时提出的）。会议持续了一个月，基本上以大范围的集思广益为主。这催生了后来人所共知的人工智能革命。
+
+
+== 发起历史 ==
+约翰·麦卡锡是这场会议的最初提议者，他当时任教於达特茅斯学院。正式的会议发起人有四位。
+
+
+== 发起人 ==
+约翰·麦卡锡（J. McCarthy）：当时是达特矛斯学院数学助理教授
+马文·闵斯基（M. L. Minsky）：哈佛大学数学与神经学初级研究员
+N. Rochester：IBM信息研究经理
+克劳德·香农（C. E. Shannon）：贝尔电话实验室数学家
+
+
+== 与会者 ==
+司马贺
+艾伦·纽厄尔
+Ray Solomonoff
+Oliver Selfridge
+Trenchard More
+Arthur Samuel
+
+
+== 主要议题 ==
+自动计算机
+如何为计算机编程使其能够使用语言
+神经网络
+计算规模理论
+自我改造
+抽象
+随机性与创造性
+
+
+== 外部链接 ==
+A PROPOSAL FOR THE DARTMOUTH SUMMER RESEARCH PROJECT ON ARTIFICIAL INTELLIGENCE
+
+
+== 参考文献 ==

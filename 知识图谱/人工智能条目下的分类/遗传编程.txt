@@ -1,0 +1,32 @@
+遗传编程或称基因编程，简称GP，是一种从生物演化过程得到灵感的自动化生成和选择计算机程序来完成用户定义的任务的技术。从理论上讲，人类用遗传编程只需要告诉计算机“需要完成什么”，而不用告诉它“如何去完成”，最终可能实现真正意义上的人工智能：自动化的发明机器。
+遗传编程是一种特殊的利用进化算法的机器学习技术，它开始于一群由随机生成的千百万个计算机程序组成的“人群”，然后根据一个程序完成给定的任务的能力来确定某个程序的适合度，应用达尔文的自然选择（适者生存）确定胜出的程序，计算机程序间也模拟两性组合，变异，基因复制，基因删除等代代进化，直到达到预先确定的某个中止条件为止。
+遗传编程的首批试验由斯蒂芬·史密斯（1980年）和Nichael·克拉姆（1985年）发表。约翰·Koza（1992年）也写了一本着名的书，《遗传编程：用自然选择让计算机编程》(ISBN 9780262111706)，来介绍遗传编程。
+使用遗传编程的计算机程序可以用很多种编程语言来写成。早期（或者说传统）的GP实现中，程序的指令和数据的值使用树状结构的组织方式，所以那些本来就提供树状组织形式的编程语言最适合与GP，例如Koza使用的Lisp语言。其他形式的GP也被提倡和实现，例如相对简单的适合传统编程语言（例如Fortran、BASIC和C语言）的线性遗传编程。有商业化的GP软件把线性遗传编程和汇编语言结合来获得更好的性能，也有的实现方法直接生成汇编程序。
+遗传编程所需的计算量非常之大（处理大量候选的计算机程序），以至于在90年代的时候它只能用来解决一些简单的问题。近年来，随着遗传编程技术自身的发展和中央处理器计算能力的指数级提升，GP开始产生了一大批显着的结果。例如在2004年左右，GP在多个领域取得近40项成果：量子计算、电子设计、游戏比赛、排序、搜索等等。这些计算机自动生成的程序（算法）中有些与2000年后人工产生的发明十分类似，甚至有两项结果产生了可以申请专利的新发明。
+在90年代，人们普遍认为为遗传编程发展一个理论十分困难，GP在各种搜索技术中也处于劣势。2000年后，GP的理论取得重大发展，建立确切的GP概率模型和马尔可夫链模型已成为可能。遗传编程比遗传算法适用的范围更广（实际上包含了遗传算法）
+除了生成计算机程序，遗传编程也被用与产生可发展的硬件。
+Juergen Schmidhuber进一步提出了宏遗传编程，一种使用遗传编程来生成一个遗传编程系统的技术。一些评论认为宏遗传编程在理论上不可行，但是需要更多的研究来确认。
+
+
+== 参考文献 ==
+Banzhaf, W., Nordin, P., Keller, R.E., Francone, F.D. (1997), Genetic Programming: An Introduction: On the Automatic Evolution of Computer Programs and Its Applications, Morgan Kaufmann
+Cramer, Nichael Lynn (1985), "A representation for the Adaptive Generation of Simple Sequential Programs" in Proceedings of an International Conference on Genetic Algorithms and the Applications, Grefenstette, John J. (ed.), CMU
+Koza, J.R. (1990), Genetic Programming: A Paradigm for Genetically Breeding Populations of Computer Programs to Solve Problems, Stanford University Computer Science Department technical report STAN-CS-90-1314. A thorough report, possibly used as a draft to his 1992 book.
+Koza, J.R. (1992), Genetic Programming: On the Programming of Computers by Means of Natural Selection, MIT Press
+Koza, J.R. (1994), Genetic Programming II: Automatic Discovery of Reusable Programs, MIT Press
+Koza, J.R., Bennett, F.H., Andre, D., and Keane, M.A. (1999), Genetic Programming III: Darwinian Invention and Problem Solving, Morgan Kaufmann
+Langdon, W. B., Poli, R. (2001), Foundations of Genetic Programming, Springer-Verlag
+Poli, R., Langdon, W. B., McPhee, N. F. (2008), A Field Guide to Genetic Programming, freely available via Lulu.com.
+Smith, S.F. (1980), A Learning System Based on Genetic Adaptive Algorithms, PhD dissertation (University of Pittsburgh)
+
+
+== 外部链接 ==
+Genetic Programming FAQ
+The Hitch-Hiker's Guide to Evolutionary Computation
+John Koza's Genetic Programming Site
+Juergen Schmidhuber's GP Site, with pre-Koza GP papers (1987)
+Bill Langdon's GP bibliography
+Meta-Genetic Programming Site
+Global Optimization Algorithms - Theory and Application
+
+^ John R. Koza. 36 Human-Competitive Results Produced by Genetic Programming. 2003-12-30 （英语）.

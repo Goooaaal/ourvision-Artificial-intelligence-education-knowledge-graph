@@ -1,0 +1,221 @@
+赛局理论（英语：game theory），又译为对策论，或者赛局理论，应用数学的一个分支，1944年冯·诺伊曼与奥斯卡·摩根斯特恩合着《博弈论与经济行为》，标志着现代系统博弈理论的的初步形成，因此他被称为「博弈论之父」。博弈论被认为是20世纪经济学最伟大的成果之一。目前在生物学、经济学、国际关系、计算机科学、政治学、军事战略和其他很多学科都有广泛的应用。主要研究公式化了的激励结构（游戏或者博弈）间的相互作用。是研究具有斗争或竞争性质现象的数学理论和方法。也是运筹学的一个重要学科。
+
+
+== 概述 ==
+博弈论考虑游戏中的个体的预测行为和实际行为，并研究它们的优化策略。表面上不同的相互作用可能表现出相似的激励结构（incentive structure），所以它们是同一个游戏的特例。其中一个有名有趣的应用例子是囚徒困境。
+具有竞争或对抗性质的行为称为博弈行为。在这类行为中，参加斗争或竞争的各方各自具有不同的目标或利益。为了达到各自的目标和利益，各方必须考虑对手的各种可能的行动方案，并力图选取对自己最为有利或最为合理的方案。比如日常生活中的下棋，打牌等。博弈论就是研究博弈行为中斗争各方是否存在着最合理的行为方案，以及如何找到这个合理的行为方案的数学理论和方法。
+生物学家使用博弈理论来理解和预测演化（论）的某些结果。例如，John Maynard Smith和George R. Price在1973年发表于《自然》杂志上的论文中提出的「evolutionarily stable strategy」的这个概念就是使用了博弈理论。还可以参见演化博弈理论和行为生态学（behavioral ecology）。
+博弈论也应用于数学的其他分支，如概率、统计和线性规划等。
+
+
+== 数学定义 ==
+对于“博弈”（game）有不少可以互换的定义。这里给出简短的介绍和相互关系的说明。
+
+
+=== 范式博弈（Normal form game） ===
+范式博弈又被译为正则形式的博弈、策略型赛局或标准型赛局。
+设定
+  
+    
+      
+        
+          N
+        
+      
+    
+    {\displaystyle \mathrm {N} }
+  是一个「参与者」（players）的集合。对于每一个「参与者」
+  
+    
+      
+        i
+        ∈
+        
+          N
+        
+      
+    
+    {\displaystyle i\in \mathrm {N} }
+  都有一个给定的“策略”集合
+  
+    
+      
+        Σ
+        
+           
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \Sigma \ ^{i}}
+  博弈（游戏）是一个函数，定义为：
+
+  
+    
+      
+        π
+         
+        :
+        
+          ∏
+          
+            i
+            ∈
+            
+              N
+            
+          
+        
+        Σ
+        
+           
+          
+            i
+          
+        
+        →
+        
+          
+            R
+          
+          
+            
+              N
+            
+          
+        
+      
+    
+    {\displaystyle \pi \ :\prod _{i\in \mathrm {N} }\Sigma \ ^{i}\to \mathbb {R} ^{\mathrm {N} }}
+  也就是说，如果我们知道了参与者的策略集合是什么，那么就可以有一个实数值与之对应。我们可以把上面的方程拆成两个方程来进一步把它一般化。一个方程是正则形式（Normal form game）的参与者方程，描述策略规定结果的方式。另外一个方程描写参与者对于结果（outcome）集合的偏好（preference）。也就是：
+
+  
+    
+      
+        π
+         
+        :
+        
+          ∏
+          
+            i
+            ∈
+            
+              N
+            
+          
+        
+        Σ
+        
+           
+          
+            i
+          
+        
+        →
+        Γ
+         
+      
+    
+    {\displaystyle \pi \ :\prod _{i\in \mathrm {N} }\Sigma \ ^{i}\to \Gamma \ }
+  
+这里
+  
+    
+      
+        Γ
+         
+      
+    
+    {\displaystyle \Gamma \ }
+  是游戏（博弈）的结果集合（outcome set）。对于每一个参与者
+  
+    
+      
+        i
+        ∈
+        
+          N
+        
+      
+    
+    {\displaystyle i\in \mathrm {N} }
+  都有一个偏好函数（preference function）
+
+  
+    
+      
+        ν
+        
+           
+          
+            i
+          
+        
+        :
+        Γ
+         
+        →
+        
+          R
+        
+      
+    
+    {\displaystyle \nu \ ^{i}:\Gamma \ \to \mathbb {R} }
+  .
+
+
+=== 展开形式的博弈（Extensive form game） ===
+展开形式的博弈又可译为扩展形式的博弈、扩展式赛局或扩展型赛局。
+正则形式的定义为数学家们提供了“均衡”（equilibria）问题的研究一个容易使用的表达式。因为它避免了怎么计算“策略”的问题，也就是说游戏是怎么进行的问题。
+若要考虑游戏是如何进行的，展开形式的博弈是一个比较方便的表达式。这个形式与组合博弈论关系密切。这个定义通过一个树的形式给定。在树的每一个节点（vertex），不同的参与者选择一个边（edge）。
+
+
+== 博弈论简史 ==
+对于博弈论的研究开始于恩斯特·策梅洛（1913）、埃米尔·博雷尔（1921）及冯·诺伊曼（1928），后来由冯·诺伊曼和奥斯卡·摩根斯坦（1944，1947）首次将其系统化和形式化（参照Myerson, 1991）。随后约翰·福布斯·纳什（1950，1951）利用不动点定理证明了均衡点的存在，为博弈论的一般化奠定了坚实的基础。
+约翰·福布斯·纳什、约翰·C·海萨尼及莱因哈德·泽尔腾因为他们对博弈论的突出贡献而获得1994年的瑞典银行经济学奖。罗伯特·J·奥曼、肯·宾摩尔、戴维·克瑞普斯及阿里尔·鲁宾斯坦对於博弈论也做出重大贡献。
+
+
+== 博弈分类 ==
+博弈的分类根据不同的基准也有不同的分类。一般认为，博弈主要可以分为合作博弈和非合作博弈。它们的区别在于相互发生作用的当事人之间有没有一个具有约束力的协议，如果有，就是合作博弈，如果没有，就是非合作博弈。
+从行为的时间序列性，博弈论进一步分为两类：静态博弈是指在博弈中，参与人同时选择或虽非同时选择但后行动者并不知道先行动者采取了什么具体行动；动态博弈是指在博弈中，参与人的行动有先后顺序，且后行动者能够观察到先行动者所选择的行动。通俗的理解：「囚徒困境」就是同时决策的，属于静态博弈；而棋牌类游戏等决策或行动有先后次序的，属于动态博弈。
+按照参与人对其他参与人的了解程度分为完全信息博弈和不完全信息博弈。完全博弈是指在博弈过程中，每一位参与人对其他参与人的特征、策略空间及收益函数有准确的信息。如果参与人对其他参与人的特征、策略空间及收益函数信息了解的不够准确、或者不是对所有参与人的特征、策略空间及收益函数都有准确的准确信息，在这种情况下进行的博弈就是不完全信息博弈。
+目前经济学家们现在所谈的博弈论一般是指非合作博弈，由于合作博弈论比非合作博弈论复杂，在理论上的成熟度远远不如非合作博弈论。非合作博弈又分为：完全信息静态博弈，完全信息动态博弈，不完全信息静态博弈，不完全信息动态博弈。与上述四种博弈相对应的均衡概念为：纳什均衡、子博弈精炼纳什均衡、贝叶斯纳什均衡、精炼贝叶斯纳什均衡（perfect Bayesian Nash equilibrium）。
+博弈论还有很多分类，比如：以博弈进行的次数或者持续长短可以分为有限博弈和无限博弈；以表现形式也可以分为一般型（战略型）或者展开型，等等。
+
+
+== 博弈论相关概念 ==
+纳什均衡
+囚徒困境
+重复博弈
+大众定理
+信息
+帕累托最优
+零和博弈
+非零和博弈
+微分包含式
+拍卖博弈
+
+
+== 参考书目 ==
+Harold W. K.(editor), 1997, Classics in Game theory, Princeton, NJ:Princeton University Press ISBN 0-691-01193-1
+Myerson, R., 1991, Game Theory: Analysis of Conflict. Cambridge and London: Harvard University Press.
+Osborne, M. and A. Rubinstein，1994，A Course in Game Theory, Cambridge and London: The MIT Press.
+冈田章,1996,『ゲーム理论』东京：有斐阁 ISBN 4-641-06794-5
+金子守 『ゲーム理论と蒟蒻问答』 日本评论社、2003年4月。ISBN 4-535-55288-6
+川西谕 『ゲーム理论の思考法』 中経出版、2009年9月。ISBN 978-4-8061-3470-1
+Axelrod, Robert: The Evolution of Cooperation, 1985, ISBN 0-465-02121-2
+Axelrod, Robert: The Complexity of Cooperation - Agent-Based Models of Competition and Collaboration, 1997, ISBN 0-691-01567-8
+Dixit, Avinash K./ Skeath, Susan: Games of Strategy, 1999, ISBN 0-393-97421-9
+Eigen, Manfred / Winkler, Ruthild: Das Spiel, 1976, ISBN 3-492-02151-4
+Hargreaves Heap, Shaun P. / Varoufakis, Yanis: Game Theory - A Critical Text, 2004, ISBN 0-415-25095-1
+Kelly, Anthony: Decision Making Using Game Theory - An Introduction for Managers, 2003, ISBN 0-521-81462-6
+Schlee, Welter: Einführung in die Spieltheorie, 2004, ISBN 3-528-03214-6
+
+
+== 外部链接 ==
+联盟博弈论在通信系统中的应用（英文）- Tutorial written by Prof. Debbah, head of the Alcatel-Lucent Chair on flexible radio
+Economics and Language, by Ariel Rubinstein
+Bargaining and Markets, by Osborne, M. and A. Rubinstein

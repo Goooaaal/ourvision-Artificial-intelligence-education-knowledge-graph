@@ -1,0 +1,67 @@
+普适计算（Ubiquitous computing（ubicomp）、pervasive computing），又称普存计算、普及计算、遍布式计算、泛在计算，是一个强调和环境融为一体的计算概念，而计算机本身则从人们的视线里消失。在普适计算的模式下，人们能够在任何时间、任何地点、以任何方式进行信息的获取与处理。
+普适计算是一个涉及研究范围很广的课题，包括分布式计算、移动计算、人机交互、人工智能、嵌入式系统、感知网络以及信息融合等多方面技术的融合。普适计算在教育中的应用项目：（1）清华大学smart class项目、（2）台湾淡江大学的硬件SCORM项目、（3）MIT的Oxygen项目。
+
+
+== 简介 ==
+普适计算的促进者希望嵌入到环境或日常工具中去的计算能够使人更自然的和计算机交互。而普适计算的显着目标之一则是使得计算机设备可以感知周围的环境变化，从而根据环境的变化做出自动的基于用户需要或者设定的行为。比如手机感知现在用户正在开会这个环境而自动切换为静音模式，并且自动答复来电者"主人正在开会"。这意味着普适计算不用去为了使用计算机而去寻找一台计算机。无论走到哪里，无论什么时间，都可以根据需要获得计算能力。现在热兴的物联网技术或许能看做普适计算的一个雏形。
+
+
+=== 历史 ===
+1988年，Mark Weiser提出了普适计算的思想，并预测计算模式会发展为普适计算。（另一说为1991年）
+1990年代末，普适计算这一概念得到广泛关注，逐渐升温。
+1999年，IBM正式提出普适计算的概念。
+同年，召开第一届Ubicomp国际会议。
+2000年，第一届Pervasive Computing国际会议。
+2002年，IEEE Pervasive Computing期刊创刊。
+
+
+=== 计算的进化 ===
+第一代，主机型计算（Mainframe computing）很多人共享一台大型机
+第二代，个人机计算（personal computing）一个人在一台电脑上
+第三代，网络计算（internet computing）一个人使用在互联网上的很多服务
+第四代，普适计算（pervasive computing）许许多多的设备通过全球网络为许多人提供人格化（个性化）的服务
+
+
+== 普适计算的基本特征 ==
+分散性
+多样性
+连通性
+简单性
+
+
+== 普适计算在教育中的应用项目 ==
+
+
+=== 清华大学smart class项目 ===
+清华大学将普适计算和远程教育相结合，建立智能远程教室。在智能教室中，教师的操作包括调用课件、在电子黑板上作注释、与远方的学生交流等。系统能根据对教师动作的理解，在不同的场景下向远方的学生转发相应的视频镜头或电子黑板内容，并自动记录上课的内容。
+
+
+=== 淡江大学的硬件SCORM项目 ===
+淡江大学资讯工程系施国琛教授（现中央大学资工系教授）所领导的Mine Lab。 所进行的Hard SCORM项目，允许通过手机、PDA，数字电视以及添加纸访问基於2004版SCORM标准的课程资源。
+
+
+=== MIT的OXYGEN项目 ===
+麻省理工学院OXYGEN项目 麻省理工学院的OXYGEN项目在电子白板的功能方面有了新的突破。
+
+
+== 外部参考文献链接 ==
+An introduction to the field appropriate for general audiences is Adam Greenfield's book Everyware: The Dawning Age of Ubiquitous Computing (ISBN 0-321-38401-6). Greenfield describes the interaction paradigm of ubiquitous computing as "information processing dissolving in behavior".
+Conferences in the field include:
+International Conference on Pervasive Computing (Pervasive)
+ACM International Conference on Ubiquitous Computing (Ubicomp)
+IEEE International Conference on Pervasive Computing and Communications (Percom)
+IEEE International Conference on Pervasive Services (ICPS)
+IEEE GlobeCom Workshop on Service Discovery and Composition in Ubiquitous and Pervasive Environments (SUPE)
+The Second International Conference on Mobile Ubiquitous Computing, Systems, Services and Technologies (UBICOMM 2008)
+Academic journals and magazines devoted primarily to pervasive computing:
+Pervasive Computing (IEEE)
+Personal and Ubiquitous Computing (Springer)
+Pervasive and Mobile Computing journal, PMC (Elsevier)
+Ubiquitous Computing and Communication Journal - UbiCC Journal
+Mark Weiser's original material dating from his tenure at Xerox PARC:
+Ubiquitous Computing
+Other links:
+Context and Adaptivity in Pervasive Computing Environments: Links with Software Engineering and Ontological Engineering, article in Journal of Software, Vol 4, No 9 (2009), 992-1013, Nov 2009 by Ahmet Soylu, Patrick De Causmaecker and Piet Desmet
+Yesterday’s tomorrows: notes on ubiquitous computing’s dominant vision, by Genevieve Bell & Paul Dourish.
+Towards pervasive computing in health care – A literature review, article in BMC Medical Informatics and Decision Making (Open Access journal) by Carsten Orwat, Andreas Graefe and Timm Faulwasser.
+Pervasive Technology Lab (CIC) Pervasive Technology to Help People with Mental Health Problems.

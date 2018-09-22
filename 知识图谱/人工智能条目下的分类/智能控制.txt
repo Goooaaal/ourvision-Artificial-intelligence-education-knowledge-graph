@@ -1,0 +1,39 @@
+智能控制是一种控制技术，针对控制对象及其环境、控制目标和任务的不确定性和复杂性而提出。智能控制可以自动测量被控对象的被控制量，并求出与期望值的偏差，同时采集输入环境的信息，进而根据所采集的输入信息和已有知识进行推理，得到对被控对象的输出控制，同时使偏差尽可能减小或消除。一般使用如下人工智能控制方法如类神经网路，模糊逻辑，机器学习，进化计算和遗传算法。
+
+
+== 智能控制系统 ==
+与传统控制的关系：传统控制方法研究的主要目标是被控对象，而智能控制研究的主要目标是控制器本身。智能控制的研究重点不在控制对象的数学模型分析，而在于智能控制器模型的建立，包括知识的获取、表示和存储，智能推理方式的设计等。其控制对象和控制性能也与传统控制有很大不同
+特点：
+无需建立被控对象的数学模型，特别适合非线性对象、时变对象和复杂不确定的控制对象。
+可以具有分层递阶的控制组织结构，便于处理大量的信息和储存的知识，并进行推理。
+控制效果具有自适应能力，鲁棒性好。
+可以具有学习能力，控制能力可以不断增强。
+
+
+=== 专家系统 ===
+一种能在某个领域内，以人类专家的知识和经验来解决该领域中高水平的困难任务的计算机系统。
+其主题是一个基于知识的计算机程序系统。
+专家控制的基本构成：
+观察、监测系统中的有关变量和状态；
+综合运用自己的知识和经验判断当前系统运行的状态；
+分析比较各种可以采用的控制策略并选择其中最优者予以执行，用计算机与以实现。
+
+
+=== 模糊控制 ===
+基本思想是用语言归纳操作人员的控制策略（知识、经验和直觉等），运用语言变量和模糊集合理论形成控制算法。不需要建立控制对象精确的数学模型，只要求把现场操作人员的经验和数据总结成比较完善的语言控制规则，因此她能绕过对象的不确定性、不精确性、噪音以及非线性、时变性、时滞等影响。
+
+
+=== 神经网路 ===
+类神经网路（Artificial Neural Networks）是一种应用类似於大脑神经突触联接的结构进行信息处理的数学模型。在工程与学术界也常直接简称为「神经网路」或类神经网路。
+
+
+== 参考资料 ==
+Stengel, R.F. Intelligent Failure Tolerant Control (PDF). IEEE Control Systems Magazine. 1991, 11 (4): 14–23. doi:10.1109/37.88586. 
+Stengel, R.F. Toward Intelligent Flight Control (PDF). IEEE Trans. Systems, Man, and Cybernetics. 1993, 23 (6): 1699–1717. doi:10.1109/21.257764. 
+Antsaklis, P.J.; Passino, K.M. (ed.). An Introduction to Intelligent and Autonomous Control. Kluwer Academic Publishers. 1993. ISBN 0-7923-9267-1. （原始内容存档于2009-04-10）.  
+
+
+== 外部阅读 ==
+Jeffrey T. Spooner, Manfredi Maggiore, Raul Ord onez, and Kevin M. Passino, Stable Adaptive Control and Estimation for Nonlinear Systems: Neural and Fuzzy Approximator Techniques, John Wiley & Sons, NY ;
+Jay Farrell, Marios Polycarpou, Adaptive Approximation Based Control:Unifying Neural, Fuzzy and Traditional Adaptive Approximation Approaches, John Wiley & Sons, NJ
+Schramm, G. Intelligent Flight Control - A Fuzzy Logic Approach. TU Delft Press. 1998. ISBN 90-9011924-8.

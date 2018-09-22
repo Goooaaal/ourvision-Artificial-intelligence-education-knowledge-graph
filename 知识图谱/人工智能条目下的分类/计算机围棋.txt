@@ -1,0 +1,165 @@
+计算机围棋是人工智能（AI）的一个领域，该领域致力于开发出可以下围棋的电脑程式。围棋是棋盘游戏的一种，有很古老的历史。
+
+
+== 历史 ==
+
+
+=== alpha-beta 剪枝法 ===
+最先电脑围棋也试图用类似处理西洋棋的演算法——alpha-beta 剪枝法，即一般认为的暴力搜寻法，但成长非常慢。1986年，应昌期悬赏100万美金，徵求可以打败人类的围棋软体，并以15年为期限，但没有任何人拿走奖金。到了20世纪末，这类程式表现最好的是陈志行制作的手谈，其宣称可以接近业余初段，至少与低段职业差距9子以上，其他如GNU Go更是只有业余5~10级左右。
+代表：
+手谈 (围棋软体)
+GNU Go
+
+
+=== 蒙地卡罗搜寻树 ===
+Crazy Stone首次引进了蒙地卡罗搜寻树，其原理是用蒙地卡罗法快速的把棋局下至终局，然後藉此判断局势，用这个方法，电脑围棋得到飞快性的成长，并突破了业余初段的壁障。这时代表现最好的是Zen，在AlphaGo出现的前一年，Zen的平行运算版本可以达到与职业棋士差距3~4子的水平。
+这时期开始，开始出现了UEC杯等电脑围棋比赛。在其中发生一个插曲，2010年时，黄士杰的Erica在2010电脑奥林匹亚获得19路围棋的冠军，隔年又在UEC盃拿下亚军，这在当时引起许多注目，因为Erica是单机程式，而其对手都是使用大型电脑，这也使得他获得DeepMind公司的邀请。
+代表程式：
+Zen
+Crazy Stone
+石子旋风
+Fuego
+
+
+=== 深度学习 ===
+深度学习原本主要应用是图像分析，利用电脑模拟神经元，可以训练电脑有类似人类「直觉」的反应，2014年左右，Google DeepMind和facebook等公司意识这可能可以用在处理电脑围棋。最直接的想法是输入人类的围棋棋谱，并在程式中设定围棋规则，以及各棋谱的最後胜负，利用监督学习让电脑得到「棋感」，电脑因而可以给出特定局面下有哪些可能的行棋方法，後来这个方法在AlphaGo的论文中被称为「走子网路」。2015年左右，DeepMind的David Silver意识到，其实围棋的形势判断也可以交由神经网路决定，「价值网路」因此诞生。接着DeepMind团队再使用强化学习——大众媒体称之为左右互搏——增强两种神经网路，在大约三千万盘的左右互搏後，超越了职业选手水平，这使得DeepMind最终赢得这项与facebook的竞赛。
+2016年1月27日，《自然》发表了Google DeepMind开发AlphaGo 的论文，于2015年10月，在未让子的挑战中，以5:0战绩，击败欧洲围棋冠军——职业围棋二段樊麾。这是电脑程式首次在公平比赛中击败职业棋手。2016年3月，AlphaGo在韩国首尔以4:1击败棋士李世乭。 2017年5月, AlphaGo在中国乌镇围棋峰会的三局比赛中击败当时世界排名第一的中国棋手柯洁。
+代表程式：
+AlphaGo
+AlphaGo Zero
+CGI
+Darkforest（facebook最终失败的计画）
+DeepZenGo
+ELF OpenGo
+Leela
+Leela Zero
+PhoenixGo
+绝艺
+
+
+== 难点 ==
+围棋给程式设计师们带来了许多人工智能领域里的挑战。当如IBM深蓝那样的超级电脑，已经能够击败世界上最好的西洋棋棋手的同时；却有不少人能击败围棋软体。可见，要编写出超越初级水平的电脑围棋程式，是极其困难的一回事。
+
+
+=== 棋盘太大 ===
+围棋的棋盘很大（19×19），因此通常被认为是难以编写围棋程序的一个重要原因。然而，像Amazon这样的游戏，棋盘比围棋更大，却较易编写出超越初级水平的电脑程序。
+
+
+=== 可行的着法太多 ===
+与其它棋盘游戏相比，围棋的着法几乎不受规则限制。中国象棋第一步有42种选择，国际象棋有20种选择，但围棋有361种选择。有些着法较常见，有些几乎从未走过（例如第一步下在边线上），但所有着法都有可能。
+象棋（以及大部分棋盘游戏如西洋跳棋和双陆棋）棋局过程中，棋子数逐渐减少，使游戏简化。但是，围棋中每下一子，都会使局势变得更复杂。
+
+
+=== 估值函数 ===
+
+
+=== 组合问题 ===
+
+
+== 策略搜索 ==
+
+
+== 状态表示 ==
+
+
+== 系统设计 ==
+
+
+=== 处理问题的新方法 ===
+
+
+=== 编程语言选择 ===
+
+
+=== 设计哲学 ===
+
+
+==== Minimax 树搜索 ====
+
+
+==== 蒙特卡罗方法 ====
+
+
+==== Knowledge-based 系统 ====
+
+
+==== 机器学习 ====
+
+
+== 电脑围棋程序的竞赛 ==
+
+
+=== 历史 ===
+第一个电脑围棋竞赛是由USENIX赞助，在1984年到1988年间举行。
+
+
+=== 电脑对电脑程序中的问题 ===
+
+
+== 注释和参考 ==
+
+
+=== 参考文献 ===
+AI-oriented survey of Go
+Monte-Carlo Go, presented by Markus Enzenberger, Computer Go Seminar, University of Alberta, April 2004
+Monte-Carlo Go, written by B. Bouzy and B. Helmstetter from Scientific Literature Digital Library
+Static analysis of life and death in the game of Go, written by Ken Chen & Zhixing Chen, 20 February 1999
+Co-Evolving a Go-Playing Neural Network, written by Alex Lubberts & Risto Miikkulainen, 2001
+
+
+== 参见 ==
+围棋#围棋软件与人工智慧
+围棋程序列表
+Go Text Protocol
+
+
+== 外部链接 ==
+
+
+=== General info ===
+Online Computer Go bibliography.
+Computer Go and Computer Go Programming pages at Sensei's Library
+computer-go mailing list
+The Computer Go Room on the Kiseido Go Server (KGS) for online discussion and running "bots"
+Playing with Shannon: a forum about computer go programming
+
+
+=== Specific info ===
+Information on the Go Text Protocol commonly used for interfacing Go playing engines with graphical clients and internet servers
+Kinger, Tim and Mechner, David. An Architecture for Computer Go (1996年)
+Published articles about computer go on Ideosphere gives current estimate of whether a Go program will be best player in the world
+XS4All Internet B.V.
+Minimalism in Ubiquitous Interface Design by Wren and Reynolds describes a simple computer vision system for playing Go
+
+
+=== 计算机程序 ===
+Go++ by Michael Reiss
+Handtalk, developed in China by Zhixing Chen
+The Many Faces of Go by David Fotland
+KCC Igo, from Korea (sold as Silver Star in Japan)
+Go Intellect by Ken Chen
+GNU Go , the strongest open source Go program
+Smart Go by Anders Kierulf, inventor of the Smart Game Format
+Free Go Software
+GoKnot, a Windows solution open for developing
+MIni GO Solver
+AYA by Hiroshi Yamashita
+CrazyStone by Rémi Coulom
+GNU Go, the strongest open source Go program
+Go++ by Michael Reiss (sold as Strongest Go or Tuyoi Igo in Japan)
+Go Intellect by Ken Chen
+Handtalk/Goemate, developed in China by Zhixing Chen (sold as Shudan Taikyoku in Japan)
+Haruka by Ryuichi Kawa (sold as Saikouhou in Japan)
+Indigo by Bruno Bouzy
+Katsunari by Shin-ichi Sei
+KCC Igo, from North Korea (sold as Silver Star or Ginsei Igo in Japan)
+The Many Faces of Go by David Fotland (sold as AI Igo in Japan)
+MoGo by Sylvain Gelly
+Smart Go by Anders Kierulf, inventor of the Smart Game Format
+Leela及Leela Zero
+
+
+=== Computer Go vs human/computer & tournament ===
+Comprehensive list of past computer go events
+All systems Go by David A. Mechner, discusses the game where professional go player Janice Kim won a game against program Handtalk after giving a 25-stone handicap.
+Two Representative Computer Go Games, an article about two computer go games, the one with two computers players, and the other, a 29-stone handicap human-computer game

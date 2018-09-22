@@ -1,0 +1,28 @@
+指代（coreference）为语言学中为了避免已经出现的字词重复出现在文章的句子上，导致语句结构过於赘述和语意不够清晰，所以使用代词（pronouns）或是普通名词（common nouns）来代替已经出现过的字词谓之。
+
+
+== 范例 ==
+举例：
+
+The handsome boy stared at Mary and said nothing: he seemed offended by her manner.
+
+此处的"The handsome boy"与"he"意指为同一人；"Mary"与"her"意指为另同一人。
+
+
+== 指代消解 ==
+在计算语言学中，指代消解（Coreference Resolution）是一个很重要的议题，一般被应用於处理资讯检索中的前处理部份，主要是找回原先被替换过的字词，为了避免重要的字词因指代的因素而造成权重计算降低的问题，例如：以中文维基百科中的北极熊条目为例，如下所示，由於指代的因素，其文中原为北极熊之意的字词会被代换成白熊、熊、牠和肉食动物等等的字眼，如此的表示方式，在权重计算上会产生因为北极熊此字词出现次数过於稀少，而导致资讯检索系统误判为不是描述北极熊文件，因此，透过指代消解的处理，可以将被替换过的字词还原成原有的意思，以提高权重计算的次数，增加检索的正确性。
+
+　　
+- 北极熊又称白熊，是在北极里生长的熊，牠是陆上最庞大的肉食动物。在牠生存的空间里，牠是食物链最顶层。牠拥有极厚的脂肪及毛发来保暖，其白色的外表在雪白的雪地上是良好的保护色，而且牠可以在陆上及海上捕捉食物，因此牠能在北极这种极严酷的气候里生存。
+
+
+== 参见 ==
+Anaphora (linguistics)
+Generic antecedents
+消歧义性
+权重计算
+资讯撷取
+
+
+== 外部连结 ==
+Illinois Coreference Package Coreference resolution package implemented in Java. Demo

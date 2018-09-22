@@ -1,0 +1,88 @@
+人工意识，（英语：Artificial Consciousness, AC），是一个涉及人工智慧和感知机器人学的领域，其目的是研究合成一个具有意识的人造物需要哪些必要条件。
+神经科学的研究推测意识是由互相连结的脑区交互作用所产生的，这些脑区被称为意识相关神经区（NCC）。然而也有人反对这样的观点。人工意识的支持者则认为电脑可以模拟这种尚未完全明了的意识交互行为。在最近的研究里，Steven Ericsson-Zenith认为目前还缺少新方法和新机制去解释神经元的行为如何产生意识。在人工智能哲学中关于心灵、意识和精神状态的讨论中，人工意识也是一个经常出现的话题。
+
+
+== 哲学观点 ==
+关于意识的理论假设有很多种，所以关于人工意识的操作方案也有很多种。在哲学的语境下，关于意识最常见的分类方法可能是分为取用意识（Access consciousness）与现象意识（Phenomenal consciousness）。取用意识包括那些可以被知觉到的经验概念，而现象意识指的是那些不能被知觉到的，包括“纯感觉”、“它是怎样的”或者是感质。 ( Block 1997).
+
+
+=== 关于可能性的争论 ===
+类型物理主义者和其他怀疑论者坚持认为，意识只能够在特别的物理系统中产生，因为意识的某些特性依赖于物理构成 ( Block 1978; Bickle 2003).
+Giorgio Buttazzo在他的文章《人工意识：幻想还是真实的可能》（"Artificial Consciousness: Utopia or Real Possibility"）中写道：我们现有的技术水平所能达到的自主水平“计算机在完全自主的运行模式下，不能表现出创造性、情感或者自由意志。一台计算机就像洗衣机一样，是由各部件构成的奴隶。” 
+对于其他理论家（例如功能主义者），他们将精神状态定义为因果关系序列。任何系统，不管其物理构成如何，只要能够形成同样的因果关系模式，就可以被认为拥有精神状态，包括意识。 ( Putnam 1967)
+
+
+==== 基于计算的观点 ====
+关于人工意识的可能性，最明确的一个观点来自于戴维·查默斯。他在文章 Chalmers 2011中提出，对于构建一个有意识的心灵来说，恰当类型的计算就足够了。在摘要中，他这样定义他的目标：计算机能够执行计算。计算可以把握其他系统的抽象因果结构。
+查默斯的观点中最具争议的部分是，他认为精神特性是“结构不变的”。精神的属性分为两方面，心理学的和现象学的。心理学属性，例如信仰和知觉，是“由其因果关系定义的”。他根据 Armstrong 1968 和 Lewis 1972 这两篇文章提出“具有同样因果拓扑结构的系统...会具有同样的心理学属性。”
+现象学属性初看起来并不能够通过它们的因果关系结构来定义。要建立用因果关系结构来说明现象学属性的理论，需要经过证明。查默斯为此提出了 “跳舞的感质证明” ：查默斯首先假设，拥有不同的因果结构的智能主体可以拥有不同的体验。然后他让读者想象将其中一个主题逐个更换零件（比如硅制成的神经元件），使它渐渐变成另一个主体，在过程中保留它的因果结构不变。根据原假设，在这个变换的过程中，主题的体验会发生变化，然而由于因果拓扑结构没有变化，主体无法从中“意识”到自己的经验哪一点发生了变化。
+而人工意识的反对者们认为，查默斯的证明依赖于，默认所有的精神属性和外部链接都可以经过因果结构的抽象过程。
+
+
+=== 伦理学 ===
+
+如果我们确定一个机器具有意识，那么它就需要成为伦理学的主题（例如，它在法律上的地位是什么）。例如，一个有意识的计算机如果被当做工具、当做建筑的中央电脑或者是巨型机器，会造成特殊的混乱。需要为这样的情况制定特别的法律，也需要为意识提供一个法律上的定义（例如，感受快乐和痛苦等情感的能力）。由于人工意识仍然很大程度上属于理论课题，这些伦理问题也并未被广泛讨论或研究，虽然它们常常成为科幻的主题（见下文）。
+2003年的洛伯纳奖的规则明确地指出了机器人权益的问题：
+
+61. 如果，在任何一年里，一个经由萨里大学或者剑桥中心参赛的，可公开获得的开源参赛者获得了银奖或者金奖，那么奖牌和奖金将授予对此参赛者负责的实体。如果这样的实体无法识别，或者两个或更多的申领人之间有争议，那么奖牌和奖金将被保留在基金中直到该参赛者可以合法地在美国或者参赛地拥有对奖牌和奖金的权利。
+
+
+== 研究与实施方案 ==
+
+
+=== 意识的各方面 ===
+意识有很多方面被认为是为机器建造一个人工意识所必需的。伯纳德·巴尔斯( Baars 1988) 等人提出了一系列需要意识参与的功能，包括定义与语境设定、适应与学习、整合、标记与纠错、召集与控制、排序与存取访问、决策或执行功能、模仿能力、元认知与自我观察功能、自编程与自我维持功能。Igor Aleksander为人工意识提供了12条标准( Aleksander 1995)，包括：脑是一台状态机器、内部神经元分区、有意识与无意识状态、知觉学习与记忆、预测、自我意识、 意义代表、话语学习、语言学习、意愿、直觉以及情绪。人工意识的目标是定义意识的这些方面，是否以及如何能够在一台人工的机器，例如数字计算机内工程合成。这个名单并未穷尽，还有许多其他并未包含在内。
+
+
+==== 感知 ====
+感知是人工意识中必需的一部分，但是关于“感知”的确切定义还有许多问题。关于猴的镜像神经元的实验结果显示，激活神经元的是某个过程，而非仅仅一个状态或者物体。感知包括根据来自感觉或者想象的信息构建和测试不同的模型，在做预测的时候也会有效。这样的建模需要很大的可塑性。建造这样的模型，包括物理世界的模型、个人的内部状态与过程的模型，以及其他有意识个体的模型。
+至少存在三种类型的感知： 主体感知（agency awareness）、目标感知（goal awareness）以及感觉动作感知（sensorimotor awareness），后者可能是有意识的也可能不是。例如，你可能通过主体感知知道你昨天进行了某项行为，但是现在不能意识到它；目标感知是你可能感知到你必须寻找一个丢失的物体，但是现在不能意识到它；感觉动作感知，你可能感知你的手放在一个物体上，但是现在不能意识到它。
+因为被感知的物体通常会被意识到，意识和感知之间的差别常常混淆，有时它们被当做同义词使用。
+
+
+==== 记忆 ====
+有意识的事件与记忆之间，以学习、复现与检索的方式相互作用。 IDA模型 将意识的作用描述为知觉记忆、暂时情节记忆与程序记忆的更新， 暂时的情节记忆与陈述性记忆在IDA模型中存在分布式表示，有证据表明它们在神经系统中也是如此。 在IDA模型中，这两种记忆的计算采用了彭蒂·卡内尔瓦的稀疏分布式存储器结构。
+
+
+==== 学习 ====
+伯纳德·巴尔斯认为学习对于人工意识来说也同样重要，意识的经验需要得到表示，并且转化为新的和有意义的事件 ( Baars 1988) 。阿克塞尔·克里尔曼斯与Luis Jiménez认为，学习可以定义为“一组系统发生学上的高级改变行为，它高度依赖于主体经验的感觉演化，以便让他们拥有在高度复杂、无法预测的环境中灵活控制行为的能力。” ( Cleeremans 2001).
+
+
+==== 预测 ====
+伊戈尔·亚历山大认为对于可预知的事件进行预测的能力是人工意识的重要部分。 在涌现主义者丹尼尔·丹尼特的《意识的解释》中提出的多重草稿模型可能用于预测：该模型提出了选择最适合的“草稿”来适合当前环境的评价机制。预测包括了预言自我的有意识行为的后果和他人的可能行为的后果。
+真实世界中的各种关系在生物的意识中构造出镜像，从而使得生物能够预测事件。 而人工意识机器也应该能够预测事件，以便当它们发生的时候进行回应，或者采取必要行为来防止相应事件发生。这暗示着该机器需要可塑性、即时反应的组成部分以便建立真实世界和预测世界的空间、动力学、统计、功能与因果关系模型，使得它足以证明不仅对于过去有意识，对于现在和未来也有意识。为了达到这一点，一个意识机器需要作出一致的预言与偶发事件应对方案，不仅仅针对类似象棋盘这样的固定规则游戏，也要针对会发生变化的新环境，可以在运行中对于真实环境进行恰当的模拟与控制。
+
+
+== 参考文献 ==
+
+
+=== 注释 ===
+
+
+=== 参考书目 ===
+
+
+== 延伸阅读 ==
+Baars, Bernard and Franklin, Stan. 2003. How conscious experience and working memory interact. Trends in Cognitive Science 7: 166–172.
+Casti, John L. "The Cambridge Quintet: A Work of Scientific Speculation", Perseus Books Group , 1998
+Franklin, S, B J Baars, U Ramamurthy, and Matthew Ventura. 2005. The role of consciousness in memory. Brains, Minds and Media 1: 1–38, pdf.
+Haikonen, Pentti (2004), Conscious Machines and Machine Emotions, presented at Workshop on Models for Machine Consciousness, Antwerp, BE, June 2004.
+McCarthy, John (1971–1987), Generality in Artificial Intelligence. Stanford University, 1971-1987.
+Penrose, Roger, The Emperor's New Mind, 1989.
+Sternberg, Eliezer J. (2007) Are You a Machine? Tha Brain the Mind and What it Means to be Human. Amherst, NY: Prometheus Books.
+Suzuki T., Inaba K., Takeno, Junichi (2005), Conscious Robot That Distinguishes Between Self and Others and Implements Imitation Behavior, (Best Paper of IEA/AIE2005), Innovations in Applied Artificial Intelligence, 18th International Conference on Industrial and Engineering Applications of Artificial Intelligence and Expert Systems, pp. 101–110, IEA/AIE 2005, Bari, Italy, June 22–24, 2005.
+Takeno, Junichi (2006), The Self-Aware Robot -A Response to Reactions to Discovery News-, HRI Press, August 2006.
+Zagal, J.C., Lipson, H. (2009) "Self-Reflection in Evolutionary Robotics", Proceedings of the Genetic and Evolutionary Computation Conference, pp 2179–2188, GECCO 2009.
+
+
+== 外部链接 ==
+Artefactual consciousness depiction by Professor Igor Aleksander
+FOCS 2009: Manuel Blum - Can (Theoretical Computer) Science come to grips with Consciousness?
+www.Conscious-Robots.com, Machine Consciousness and Conscious Robots Portal.
+David Chalmers
+Online papers on the possible mechanisms of Higher-Order Thought
+Practopoiesis
+Robot Demonstrates Self-awareness 21-Dec-2005
+Robot In Touch with Its Emotions 5-Sep-2005
+Scientific Ethics
+Ron Sun's papers on consciousness

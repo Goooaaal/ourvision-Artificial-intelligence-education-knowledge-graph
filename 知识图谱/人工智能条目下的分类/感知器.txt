@@ -1,0 +1,1094 @@
+感知器（英语：Perceptron）是Frank Rosenblatt在1957年就职于康奈尔航空实验室（Cornell Aeronautical Laboratory）时所发明的一种人工神经网路。它可以被视为一种最简单形式的前馈神经网路，是一种二元线性分类器。
+Frank Rosenblatt给出了相应的感知机学习算法，常用的有感知机学习、最小二乘法和梯度下降法。譬如，感知机利用梯度下降法对损失函数进行极小化，求出可将训练数据进行线性划分的分离超平面，从而求得感知机模型。
+
+感知机是生物神经细胞的简单抽象。神经细胞结构大致可分为：树突、突触、细胞体及轴突。单个神经细胞可被视为一种只有两种状态的机器——激动时为『是』，而未激动时为『否』。神经细胞的状态取决于从其它的神经细胞收到的输入信号量，及突触的强度（抑制或加强）。当信号量总和超过了某个阈值时，细胞体就会激动，产生电脉冲。电脉冲沿着轴突并通过突触传递到其它神经元。为了模拟神经细胞行为，与之对应的感知机基础概念被提出，如权量（突触）、偏置（阈值）及激活函数（细胞体）。
+在人工神经网络领域中，感知机也被指为单层的人工神经网络，以区别于较复杂的多层感知机（Multilayer Perceptron）。作为一种线性分类器，（单层）感知机可说是最简单的前向人工神经网络形式。尽管结构简单，感知机能够学习并解决相当复杂的问题。感知机主要的本质缺陷是它不能处理线性不可分问题。
+
+
+== 历史 ==
+1943年，心理学家Warren McCulloch和数理逻辑学家Walter Pitts在合作的《A logical calculus of the ideas immanent in nervous activity》论文中提出并给出了人工神经网络的概念及人工神经元的数学模型，从而开创了人工神经网络研究的时代。1949年，心理学家唐纳德·赫布在《The Organization of Behavior》论文中描述了神经元学习法则。
+人工神经网络更进一步被美国神经学家Frank Rosenblatt所发展。他提出了可以模拟人类感知能力的机器，并称之为『感知机』。1957年，在Cornell航空实验室中，他成功在IBM 704机上完成了感知机的仿真。两年后，他又成功实现了能够识别一些英文字母、基于感知机的神经计算机——Mark1，并于1960年6月23日，展示与众。
+为了『教导』感知机识别图像，Rosenblatt，在Hebb学习法则的基础上，发展了一种迭代、试错、类似于人类学习过程的学习算法——感知机学习。除了能够识别出现较多次的字母，感知机也能对不同书写方式的字母图像进行概括和归纳。但是，由于本身的局限，感知机除了那些包含在训练集里的图像以外，不能对受干扰（半遮蔽、不同大小、平移、旋转）的字母图像进行可靠的识别。
+首个有关感知机的成果，由Rosenblatt于1958年发表在《The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain》的文章里。1962年，他又出版了《Principles of Neurodynamics: Perceptrons and the theory of brain mechanisms》一书，向大众深入解释感知机的理论知识及背景假设。此书介绍了一些重要的概念及定理证明，例如感知机收敛定理。
+虽然最初被认为有着良好的发展潜能，但感知机最终被证明不能处理诸多的模式识别问题。1969年，Marvin Minsky和Seymour Papert在《Perceptrons》书中，仔细分析了以感知机为代表的单层神经网络系统的功能及局限，证明感知机不能解决简单的异或（XOR）等线性不可分问题，但Rosenblatt和Minsky及Papert等人在当时已经了解到多层神经网络能够解决线性不可分的问题。
+由于Rosenblatt等人没能够及时推广感知机学习算法到多层神经网络上，又由于《Perceptrons》在研究领域中的巨大影响，及人们对书中论点的误解，造成了人工神经领域发展的长年停滞及低潮，直到人们认识到多层感知机没有单层感知机固有的缺陷及反向传播算法在80年代的提出，才有所恢复。1987年，书中的错误得到了校正，并更名再版为《Perceptrons - Expanded Edition》。
+近年，在Freund及Schapire（1998）使用核技巧改进感知机学习算法之后，愈来愈多的人对感知机学习算法产生兴趣。后来的研究表明除了二元分类，感知机也能应用在较复杂、被称为structured learning类型的任务上（Collins, 2002），又或使用在分布式计算环境中的大规模机器学习问题上（McDonald, Hall and Mann, 2011）。
+
+
+== 定义 ==
+感知器使用特征向量来表示的前馈神经网络，它是一种二元分类器，把矩阵上的输入
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  （实数值向量）映射到输出值
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  上（一个二元的值）。
+
+  
+    
+      
+        f
+        (
+        x
+        )
+        =
+        
+          
+            {
+            
+              
+                
+                  1
+                
+                
+                  
+                    if 
+                  
+                  w
+                  ⋅
+                  x
+                  +
+                  b
+                  >
+                  0
+                
+              
+              
+                
+                  0
+                
+                
+                  
+                    else
+                  
+                
+              
+            
+            
+          
+        
+      
+    
+    {\displaystyle f(x)={\begin{cases}1&{\text{if }}w\cdot x+b>0\\0&{\text{else}}\end{cases}}}
+  
+
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  是实数的表示权重的向量，
+  
+    
+      
+        w
+        ⋅
+        x
+      
+    
+    {\displaystyle w\cdot x}
+  是点积。
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  是偏置，一个不依赖于任何输入值的常数。偏置可以认为是激励函数的偏移量，或者给神经元一个基础活跃等级。
+
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  （0或1）用于对
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  进行分类，看它是肯定的还是否定的，这属于二元分类问题。如果
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  是负的，那么加权后的输入必须产生一个肯定的值并且大于
+  
+    
+      
+        −
+        b
+      
+    
+    {\displaystyle -b}
+  ，这样才能令分类神经元大于阈值0。从空间上看，偏置改变了决策边界的位置（虽然不是定向的）。
+由于输入直接经过权重关系转换为输出，所以感知器可以被视为最简单形式的前馈式人工神经网络。
+
+
+== 结构 ==
+
+设有
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  维输入的单个感知机（如右图示），
+  
+    
+      
+        
+          
+            a
+          
+          
+            1
+          
+        
+      
+    
+    {\displaystyle {a}_{1}}
+  至
+  
+    
+      
+        
+          
+            a
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle {a}_{n}}
+  为
+  
+    
+      
+        n
+      
+    
+    {\displaystyle n}
+  维输入向量的各个分量，
+  
+    
+      
+        
+          
+            w
+          
+          
+            1
+          
+        
+      
+    
+    {\displaystyle {w}_{1}}
+  至
+  
+    
+      
+        
+          
+            w
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle {w}_{n}}
+  为各个输入分量连接到感知机的权量（或称权值），
+  
+    
+      
+        
+          b
+        
+      
+    
+    {\displaystyle {b}}
+  为偏置，
+  
+    
+      
+        f
+        (
+        .
+        )
+      
+    
+    {\displaystyle f(.)}
+  为激活函数（又曰激励函数或传递函数），
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  为标量输出。输出
+  
+    
+      
+        t
+      
+    
+    {\displaystyle t}
+  的数学描述为：
+
+其中
+  
+    
+      
+        
+          w
+        
+        =
+        [
+        
+          w
+          
+            1
+          
+        
+        
+        
+          w
+          
+            2
+          
+        
+        
+        .
+        .
+        .
+        
+        
+          w
+          
+            n
+          
+        
+        
+        b
+        
+          ]
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \mathbf {w} =[w_{1}\;w_{2}\;...\;w_{n}\;b]^{T}}
+  ，
+  
+    
+      
+        
+          x
+        
+        =
+        [
+        
+          x
+          
+            1
+          
+        
+        
+        
+          x
+          
+            2
+          
+        
+        
+        .
+        .
+        .
+        
+        
+          x
+          
+            n
+          
+        
+        
+        1
+        
+          ]
+          
+            T
+          
+        
+      
+    
+    {\displaystyle \mathbf {x} =[x_{1}\;x_{2}\;...\;x_{n}\;1]^{T}}
+  及
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  为反对称的符号函数，其定义为：
+
+从式(1)可知，偏置被引申为权量，而对应的输入值为
+  
+    
+      
+        1
+      
+    
+    {\displaystyle 1}
+  。故，一感知机的输出行为是求得输入向量与权向量的内积后，经一个激活函数所得一个标量结果。
+设输入向量与权向量的内积为零，可得出
+  
+    
+      
+        (
+        n
+        +
+        1
+        )
+      
+    
+    {\displaystyle (n+1)}
+  维的超平面。平面的法向量为
+  
+    
+      
+        
+          w
+        
+      
+    
+    {\displaystyle \mathbf {w} }
+  ，并经过
+  
+    
+      
+        (
+        n
+        +
+        1
+        )
+      
+    
+    {\displaystyle (n+1)}
+  维输入空间的原点。法向量指向的输入空间，其输出值为
+  
+    
+      
+        +
+        1
+      
+    
+    {\displaystyle +1}
+  ，而与法向量反向的输入空间，其输出值则为
+  
+    
+      
+        −
+        1
+      
+    
+    {\displaystyle -1}
+  。故可知这个超平面定义了决策边界，并把输入空间划分为二。
+
+
+== 准则函数 ==
+设一训练集为
+  
+    
+      
+        D
+        =
+        {
+        (
+        
+          
+            p
+          
+          
+            1
+          
+        
+        ,
+        
+        
+          t
+          
+            1
+          
+        
+        )
+        ,
+        
+        …
+        
+        ,
+        (
+        
+          
+            p
+          
+          
+            m
+          
+        
+        ,
+        
+        
+          t
+          
+            m
+          
+        
+        )
+        }
+      
+    
+    {\displaystyle D=\{(\mathbf {p} _{1},\;t_{1}),\;\dots \;,(\mathbf {p} _{m},\;t_{m})\}}
+  ，其中
+  
+    
+      
+        
+          
+            p
+          
+          
+            i
+          
+        
+      
+    
+    {\displaystyle \mathbf {p} _{i}}
+  表示输入，而
+  
+    
+      
+        
+          
+            t
+          
+          
+            i
+          
+        
+      
+    
+    {\displaystyle {t}_{i}}
+  是对应的目标输出。由于符号函数的不连续性，如果采用标准的均方误差，所得误差函数必然是不连续的，因而基于梯度的学习算法也就不能被使用。为此，Rosenblatt提出了感知机准则函数：
+
+其中
+  
+    
+      
+        M
+      
+    
+    {\displaystyle M}
+  是被当前
+  
+    
+      
+        
+          w
+        
+      
+    
+    {\displaystyle \mathbf {w} }
+  错误分类的的输入向量集合。当
+  
+    
+      
+        
+          
+            w
+          
+          
+            T
+          
+        
+        
+          
+            p
+          
+          
+            i
+          
+        
+        ≥
+        0
+      
+    
+    {\displaystyle \mathbf {w} ^{T}\mathbf {p} _{i}\geq 0}
+  时，
+  
+    
+      
+        
+          
+            t
+          
+          
+            i
+          
+        
+      
+    
+    {\displaystyle {t}_{i}}
+  为
+  
+    
+      
+        −
+        1
+      
+    
+    {\displaystyle -1}
+  ，而当
+  
+    
+      
+        
+          
+            w
+          
+          
+            T
+          
+        
+        
+          
+            p
+          
+          
+            i
+          
+        
+        <
+        0
+      
+    
+    {\displaystyle \mathbf {w} ^{T}\mathbf {p} _{i}<0}
+  时，
+  
+    
+      
+        
+          
+            t
+          
+          
+            i
+          
+        
+      
+    
+    {\displaystyle {t}_{i}}
+  为
+  
+    
+      
+        +
+        1
+      
+    
+    {\displaystyle +1}
+  。故，误差函数
+  
+    
+      
+        E
+        (
+        
+          w
+        
+        )
+      
+    
+    {\displaystyle E(\mathbf {w} )}
+  是一组正数的和，又或当训练集里所有输入都被正确分类时，等于零。
+
+
+== 学习算法 ==
+学习算法对于所有的神经元都是一样的，因此下面所有东西都要独立的应用于每个神经元。我们首先定义一些变量：
+
+  
+    
+      
+        x
+        (
+        j
+        )
+      
+    
+    {\displaystyle x(j)}
+  表示n维输入向量中的第j项
+
+  
+    
+      
+        w
+        (
+        j
+        )
+      
+    
+    {\displaystyle w(j)}
+  表示权重向量的第j项
+
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  表示神经元接受输入
+  
+    
+      
+        x
+      
+    
+    {\displaystyle x}
+  产生的输出
+
+  
+    
+      
+        α
+      
+    
+    {\displaystyle \alpha }
+  是一个常数，符合
+  
+    
+      
+        0
+        <
+        α
+        ≤
+        1
+      
+    
+    {\displaystyle 0<\alpha \leq 1}
+  （接受率）
+更进一步，为了简便我们假定偏置量
+  
+    
+      
+        b
+      
+    
+    {\displaystyle b}
+  等于0。因为一个额外的维
+  
+    
+      
+        n
+        +
+        1
+      
+    
+    {\displaystyle n+1}
+  维，可以用
+  
+    
+      
+        x
+        (
+        n
+        +
+        1
+        )
+        =
+        1
+      
+    
+    {\displaystyle x(n+1)=1}
+  的形式加到输入向量，这样我们就可以用
+  
+    
+      
+        w
+        (
+        n
+        +
+        1
+        )
+      
+    
+    {\displaystyle w(n+1)}
+  代替偏置量。
+感知器的学习通过对所有训练实例进行多次的迭代进行更新的方式来建模。令
+  
+    
+      
+        
+          D
+          
+            m
+          
+        
+        =
+        {
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          y
+          
+            1
+          
+        
+        )
+        ,
+        …
+        ,
+        (
+        
+          x
+          
+            m
+          
+        
+        ,
+        
+          y
+          
+            m
+          
+        
+        )
+        }
+      
+    
+    {\displaystyle D_{m}=\{(x_{1},y_{1}),\dots ,(x_{m},y_{m})\}}
+  表示一个有
+  
+    
+      
+        m
+      
+    
+    {\displaystyle m}
+  个训练实例的训练集。
+每次迭代权重向量以如下方式更新：
+对于每个
+  
+    
+      
+        
+          D
+          
+            m
+          
+        
+        =
+        {
+        (
+        
+          x
+          
+            1
+          
+        
+        ,
+        
+          y
+          
+            1
+          
+        
+        )
+        ,
+        …
+        ,
+        (
+        
+          x
+          
+            m
+          
+        
+        ,
+        
+          y
+          
+            m
+          
+        
+        )
+        }
+      
+    
+    {\displaystyle D_{m}=\{(x_{1},y_{1}),\dots ,(x_{m},y_{m})\}}
+  中的每个
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle (x,y)}
+  对，
+
+  
+    
+      
+        w
+        (
+        j
+        )
+        :=
+        w
+        (
+        j
+        )
+        +
+        
+          α
+          (
+          y
+          −
+          f
+          (
+          x
+          )
+          )
+        
+        
+          x
+          (
+          j
+          )
+        
+        
+        (
+        j
+        =
+        1
+        ,
+        …
+        ,
+        n
+        )
+      
+    
+    {\displaystyle w(j):=w(j)+{\alpha (y-f(x))}{x(j)}\quad (j=1,\ldots ,n)}
+  
+注意这意味着，仅当针对给定训练实例
+  
+    
+      
+        (
+        x
+        ,
+        y
+        )
+      
+    
+    {\displaystyle (x,y)}
+  产生的输出值
+  
+    
+      
+        f
+        (
+        x
+        )
+      
+    
+    {\displaystyle f(x)}
+  与预期的输出值
+  
+    
+      
+        y
+      
+    
+    {\displaystyle y}
+  不同时，权重向量才会发生改变。
+如果存在一个正的常数
+  
+    
+      
+        γ
+      
+    
+    {\displaystyle \gamma }
+  和权重向量
+  
+    
+      
+        w
+      
+    
+    {\displaystyle w}
+  ，对所有的
+  
+    
+      
+        i
+      
+    
+    {\displaystyle i}
+  满足
+  
+    
+      
+        
+          y
+          
+            i
+          
+        
+        ⋅
+        
+          (
+          
+            ⟨
+            w
+            ,
+            
+              x
+              
+                i
+              
+            
+            ⟩
+            +
+            b
+          
+          )
+        
+        >
+        γ
+      
+    
+    {\displaystyle y_{i}\cdot \left(\langle w,x_{i}\rangle +b\right)>\gamma }
+  ，训练集
+  
+    
+      
+        
+          D
+          
+            m
+          
+        
+      
+    
+    {\displaystyle D_{m}}
+  就被叫被做线性分隔的。Novikoff（1962）证明如果训练集是线性分隔的，那么感知器算法可以在有限次迭代后收敛，错误的数量由
+  
+    
+      
+        
+          
+            (
+            
+              
+                
+                  2
+                  R
+                
+                γ
+              
+            
+            )
+          
+          
+            2
+          
+        
+      
+    
+    {\displaystyle \left({\frac {2R}{\gamma }}\right)^{2}}
+  限定，其中
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+  为输入向量的最大平均值。
+然而，如果训练集不是线性分隔的，那么这个算法则不能确保会收敛。
+
+
+== 参见 ==
+机器学习
+神经网络
+统计学习
+
+
+== 参考文献 ==
+
+Freund, Y. and Schapire, R. E. 1998. Large margin classification using the perceptron algorithm. In Proceedings of the 11th Annual Conference on Computational Learning Theory (COLT' 98). ACM Press.
+Gallant, S. I. (1990). Perceptron-based learning algorithms. IEEE Transactions on Neural Networks, vol. 1, no. 2, pp. 179-191.
+Rosenblatt, Frank (1958), The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain, Cornell Aeronautical Laboratory, Psychological Review, v65, No. 6, pp. 386-408.
+Minsky M L and Papert S A 1969 Perceptrons (Cambridge, MA: MIT Press)
+Novikoff, A. B. (1962). On convergence proofs on perceptrons. Symposium on the Mathematical Theory of Automata, 12, 615-622. Polytechnic Institute of Brooklyn.
+Widrow, B., Lehr, M.A., "30 years of Adaptive Neural Networks: Perceptron, Madaline, and Backpropagation," Proc. IEEE, vol 78, no 9, pp. 1415-1442, (1990)。
+神经网络设计（Neural Network Design），[美]哈根等着，戴葵等译。机械工业出版社。ISBN 9787111075851
+
+
+== 外部连结 ==
+Chapter 3 Weighted networks - the perceptron and chapter 4 Perceptron learning of Neural Networks - A Systematic Introduction by Raúl Rojas（ISBN 978-3540605058）
+History of perceptrons
+Mathematics of perceptrons
+Perceptron demo applet and an introduction by examples

@@ -1,0 +1,83 @@
+模糊逻辑是处理部分真实概念的布林运算扩展。经典逻辑坚持所有事物（陈述）都可以用二元项（0或1，黑或白，是或否）来表达，而模糊逻辑用真实度替代了布尔真值。这些陈述表示实际上接近于日常人们的问题和语意陈述，因为“真实”和结果在多数时候是部分（非二元）的和/或不精确的（不准确的，不清晰的，模糊的）。
+真实度经常混淆于概率。但是它们在概念上是不一样的；模糊真值表示在模糊定义的集合中的成员归属关系，而不是某事件或条件的可能度（likelihood）。要展示这种区别，考虑下列情节：Bob在有两个毗邻的屋子的房子中：厨房和餐厅。在很多情况下，Bob的状态是在事物“在厨房中”的集合内是完全明确的：他要么“在厨房中”要么“不在厨房中”。但Bob站在门口的时候怎么办呢？它可被认为是“部分的在厨房中”。量化这个部分陈述产生了一个模糊集合成员关系。比如，只有他的小脚趾在餐厅，我们可以说Bob是0.01“在厨房中”。只要Bob站在了门口，就没有事件（如抛硬币）能解决他完全的“在厨房中”或“不在厨房中”。模糊集合是基于集合的模糊定义而不是随机性。
+模糊逻辑允许在包含0和1的它们之间集合成员关系值，同于黑和白之间的灰色，在它的语言形式中，有不精确的概念如"稍微"、"相当"和"非常"。特别是，它允许在集合中的部分成员关系。它有关于模糊集合和可能性理论。它是1965年卢菲特·泽德教授在加州大学伯克利分校介入的。
+模糊逻辑尽管被广泛接受却是有争议的：它被某些控制工程师出于有效性和其他原因，和一些坚持概率论是不确定性的唯一严格描述的统计学家所拒绝。批评者认为它不是普通集合论的超集，因为成员函数是依据常规集合而定义的。
+
+
+== 应用 ==
+模糊逻辑可以用于控制家用电器比如洗衣机（它感知装载量和清洁剂浓度并据此调整它们的洗涤周期）和空调。
+基本的应用可以特征化为连续变量的子范围（subranges），形状常常是三角形或梯形。例如，防锁刹车的温度测量可以有正确控制刹车所需要的定义特定温度范围的多个独立的成员关系函数（归属函数 / Membership function）。每个函数映射相同的温度到在0至1范围内的一个真值且为非凹函数（non-concave functions，否则可能在某部分温度越高却被归类为越冷）。接着这些真值可以用于确定应当怎样控制刹车。
+
+在这个图象中，冷、暖和热是映射温度范围的函数。在这个刻度上的一个点有三个"真值"—分别对应着三个真值函数。对于展示的特定的温度，这三个真值可以被解释为把温度描述为，"相当冷", "有些暖"和"不太热"。
+通常情况会采用梯形，但在作模糊回归分析时则会选用三角形的归属函数。
+
+
+== 怎样应用模糊逻辑 ==
+模糊逻辑通常使用IF/THEN规则，或构造等价的东西比如模糊关联矩阵。
+规则通常表达为如下形式:
+IF模糊变量IS模糊集合THEN动作
+
+例如，一个非常简单的使用风扇的温度调节器:
+IF温度IS非常冷 THEN停止风扇
+IF温度IS冷THEN减速风扇
+IF温度IS正常THEN保持现有水平
+IF温度IS热THEN加速风扇
+
+注意没有"ELSE"。所有规则都被求值，因为温度在不同程度上可以同时是"冷"和"正常"。
+在模糊逻辑中存在着布尔逻辑的AND、OR和NOT 运算符，它们通常定义为最小、最大和求补；在以这种方式定义它们的时候，它们叫做Zadeh运算符，因为它们是在Zadeh最初论文中首次定义的。对于模糊变量x和y:
+NOT x = (1 - truth(x))
+x AND y = minimum(truth(x),truth(y))
+x OR y = maximum(truth(x),truth(y))
+
+还可以应用叫做hedges的更贴近自然语言其他的运算符。一般性的副词如"非常"或"有点"能使用数学公式修改集合的内涵。
+在应用中，编程语言ProLog由於有架设被演绎逻辑问讯的"规则"的数据库设施而很适合实现模糊逻辑。这种编程叫做逻辑编程。
+
+
+=== 其他例子 ===
+如果一个人的高度是1.8米，把他考虑为高:
+IF male IS true AND height >= 1.8 THEN is_tall IS true
+IF male IS true AND height >= 1.8 THEN is_short IS false
+
+但上述的定义却是不现实的。因此，在模糊规则下，在高和矮之间不做明显的区分:
+IF height >= medium male THEN is_short IS agree somehow
+IF height >= medium male THEN is_tall IS agree somehow
+
+在模糊的情况下，没有像1,83米这样的高度，只有模糊值，比如下列赋值:
+dwarf male = [0, 1.3] m
+small male = (1.3, 1.5]
+medium male = (1.5, 1.8]
+tall male = (1.8, 2.0]
+giant male > 2.0 m
+
+对于结论，也不只是两个值，而是五个:
+agree not = 0
+agree little = 1
+agree somehow = 2
+agree alot = 3
+agree fully = 4
+
+在二值或"脆弱"的情况下，高度为1.79米的一个人可能被认为是矮。如果另一个人的高度是1.8米或2.25米，这些人才被当作是高。
+这个脆弱的例子故意的区别于模糊的例子。我们在前提中不能放置
+IF male >= agree somehow AND ...
+
+因为性别经常被认为是二值信息。所以不像身高这么复杂。
+
+
+== 参考文献 ==
+
+书目
+Earl Cox, The Fuzzy Systems Handbook(1994),ISBN 0-12-194270-8
+Constantin von Altrock, Fuzzy Logic and NeuroFuzzy Applications Explained(2002),ISBN 0-13-368465-2
+Frank Höppner, Frank Klawonn, Rudolf Kruse and Thomas Runkler, Fuzzy Cluster Analysis(1999),ISBN 0-471-98864-2
+George Klir and Tina Folger, Fuzzy Sets, Uncertainty, and Information(1988),ISBN 0-13-345984-5
+George Klir and Bo Yuan, Fuzzy Sets and Fuzzy Logic(1995)ISBN 0-13-101171-5
+Ronald Yager and Dimitar Filev, Essentials of Fuzzy Modeling and Control(1994),ISBN 0-471-01761-2
+Charles Elkan. The Paradoxical Success of Fuzzy Logic. November 1993. Available from Elkan's home page.
+姚敏 着：《计算机模糊信息处理技术》，上海科学技术文献出版社，1999
+
+
+== 参见 ==
+模糊化
+解模糊
+模糊控制
+模糊控制语言

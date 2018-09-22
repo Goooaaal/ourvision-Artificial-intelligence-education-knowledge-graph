@@ -1,0 +1,68 @@
+个人数位助理（英语：personal digital assistant，缩写：PDA），一般是指掌上型电脑。相对于传统电脑，个人数位助理的优点是轻便、小巧、可移动性强，同时又不失功能的强大，缺点是屏幕过小，且电池续航能力有限。个人数位助理通常采用触控笔（Stylus）作为输入设备，而存储卡作为外部存储介质。在无线传输方面，大多数个人数位助理具有红外（IrDA）和蓝牙(Bluetooth)接口，以保证无线传输的便利性。许多个人数位助理还能够具备Wi-Fi连接以及全球定位系统（GPS）。
+便携性介于个人电脑和PDA之间的个人电脑产品有笔记本电脑（Notebook/Laptop）、UMPC及平板电脑（Tablet）。
+第一款个人数位助理是1992年由苹果电脑出品的牛顿。但这一款产品在商业上很不成功。后来出现了专门为了手写输入的Graffiti输入法，一家利用此方法作为输入法的个人数位助理公司推出了Palm这一个系列的产品，并获得了巨大的成功。在20世纪末，微软进入这一个领域，并首先推出了Windows CE 1.0操作系统，但该系统在各方面表现并不尽如人意，但后来微软推出的Windows Pocket Edition 2002一举奠定了PPC操作系统领先的地位。
+过去广泛使用的掌上电脑作业系统平台有Palm OS和微软Windows Mobile（前身为Windows CE）及Symbian OS系列。
+近来PDA为智慧型手机所取代（或是说PDA加入行动电话功能），而Android及iOS是最常见的两种智慧型手机作业系统、Windows Phone则为第三。
+
+
+== 主要功能 ==
+在个人数位助理初推出的时候，它主要功能是用作个人信息管理系统，一路演变至现在的个人数位助理能够安装不同的软件（Apps）和游戏；通常现在的个人数位助理都备有蓝牙、无线网络（Wi-Fi）、红外线（IrDA），能够连上互联网作浏览网页等工作，而亦能够将个人数位助理当作数位多媒体播放器，如果硬件支持的话，个人数位助理还可以作为全球定位系统。
+
+
+== 种类（依作业系统不同） ==
+Palm OS
+Pocket PC
+Symbian OS
+智慧型手机
+基于Linux的PDA
+电子词典
+
+
+== 生产商 ==
+DEC
+Acer（倚天资讯）
+HTC（Dopod，Qtek）
+惠普
+Mio
+Palm
+华硕
+宏碁
+Sharp
+技嘉
+东芝
+优派
+Casio
+西门子-富士通
+RIM
+
+
+== 工业用个人数位助理生产商 ==
+Symbol美国厂商，目前已经被Motorola购并
+Intermec美国厂商
+unitech 精技电脑股份有限公司子公司-精联电子，为台湾厂商
+CipherLab 欣技资讯股份有限公司为台湾厂商
+[1] CASIO为日本厂商
+
+
+== 暂停生产个人数位助理生产商 ==
+Dell
+Lenovo
+Sony
+IBM
+
+
+== 参看 ==
+智能手机
+超级移动电脑（UMPC）
+移动设备
+其他：
+维基百科行动版
+
+
+== 外部连结 ==
+PDA发烧友论坛中国内地的PDA论坛
+MAXPDA中国内地的PDA论坛
+HI-PDA HI-PDA论坛
+Palmislife台湾知名的PDA专属论坛
+Pocket PC的Step by Step基础教学on Mobile01
+Wikipedia on your PDA

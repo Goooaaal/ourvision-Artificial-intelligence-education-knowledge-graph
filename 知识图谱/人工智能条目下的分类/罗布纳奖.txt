@@ -1,0 +1,13 @@
+罗布纳奖（Loebner Prize）是一个人工智慧竞赛，每年举办一次，评审将会选出最类似人类的电脑程式。比赛采用标准图灵测试。在每一轮比赛中，评审同时与使用电脑的人类及人工智慧进行文本对话。根据参赛者的答复，评审必须决定哪一个是人类与人工智慧。
+休斯·罗布纳（Hugh Loebner）於1990年与美国马萨诸塞州剑桥行为研究中心联合发起这项赛事。它曾与弗林德斯大学，达特茅斯学院，伦敦科学博物馆，雷丁大学和阿尔斯特大学，马吉校区，德里，英国文化城合作。在人工智慧领域，罗布纳奖曾引发一些争议，马文·明斯基称之为一场无助於人工智慧领域的宣传。
+
+
+== 参考资料 ==
+
+
+== 外部连结 ==
+官方网站
+Markoff, John. Cocktail-Party Conversation -- With a Computer. New York Times. Jan 10, 1993. Conversation with the 1992 winner; topic: men and women 
+Platt, Charles. What's It Mean to be Human, Anyway?. Wired. April 1995. 
+Shah, Huma. 2008 Loebner Prize: myths and misconceptions. Oct 2008. 
+Christian, Brian. Mind vs. Machine. The Atlantic. March 2011.

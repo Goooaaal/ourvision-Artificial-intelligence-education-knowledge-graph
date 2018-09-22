@@ -1,0 +1,77 @@
+最邻近搜索（Nearest Neighbor Search, NNS）又称为“最近点搜索”（Closest point search），是一个在尺度空间中寻找最近点的优化问题。问题描述如下：在尺度空间M中给定一个点集S和一个目标点q ∈ M，在S中找到距离q最近的点。很多情况下，M为多维的欧几里得空间，距离由欧几里得距离或曼哈顿距离决定。
+高德纳在《计算机程序设计艺术》（1973）一书的第三章中称之为邮局问题，即居民寻找离自己家最近的邮局。
+
+
+== 应用 ==
+最邻近搜索问题在很多领域中都有应用，包括：
+模式识别，特别是光学字符识别
+统计分类，参见KNN（k-nearest neighbor algorithm）
+计算机视觉
+数据库，如基于内容的图像检索
+编码理论，见最大似然编码
+数据压缩，见MPEG-2标准
+向导系统
+网络营销
+DNA测序
+拼写检查，建议正确拼写。
+剽窃侦查
+相似比分算法，用来推断运动员的职业表现。
+
+
+== 方法 ==
+最邻近搜索问题有若干种解决方案，这些算法的优劣决定于他们求解的时间复杂度和用来查找的数据结构的空间复杂度。一种通常的说法表述为“维数灾难”（curse of dimensionality），指对于在大维数的欧几里得空间里用最邻近搜索的话，无法找到多项式的算法和多对数的查找时间。
+
+
+== 线性查找 ==
+最简单的最邻近搜索便是遍历整个点集，计算它们和目标点之间的距离，同时记录目前的最近点。这样的算法较为初级，可以为较小规模的点集所用，但是对于点集的尺寸和空间的维数稍大的情况不适用。线性查找所需时间为O（Nd），其中N是S的势，d是S的维。由于不需要建立数据结构，所以线性查找没有存储空间复杂度的问题。
+
+
+== 空间分割 ==
+从七十年代起分支限界方法被应用于这个问题。对欧几里得空间来说，这个方法被称为空间索引或者空间访问方法。目前已发展出好几种分支限界方法。恐怕最简单的当属K-d树，它将查找空间不断将父节点包含的区域分为相邻的两部分，每部分包含原来区域中的一半点。求解时，从根节点开始在每个分叉点上对目标点进行计算，直到叶节点。对于给定的维度，查找时间复杂度为O（log N）。R树数据结构能高效插入和删除节点，用来解决动态环境下的最邻近搜索。
+对于一般的度量空间，分支限界方法被称为度量树，特别的例子有VP树和Bk树。
+
+
+=== LSH ===
+
+LSH（Locality sensitive hashing）通过对点进行某种度量操作后将点分组散列在不同的次点集中。在这种度量下相互间距离较近的点被分在同一个次点集的可能性较高。
+
+
+=== 具有小内部维数的空间最邻近搜索 ===
+覆盖树有一个基于点集倍常量的理论界限。这个查找时间的界限是O（c12 log n），其中c是点集的膨胀常数。
+
+
+== 变化 ==
+在最邻近搜索的几个变化中，最着名的是KNN（K-nearest neighbor algorithm）和ε近似最邻近查找（ε-approximate nearest neighbor search）。
+
+
+=== KNN ===
+
+KNN查找最邻近的K个点。这种方法常被用在预测分析中，用某点的一些临近点来对它估计和分类。
+
+
+=== 近似最邻近查找 ===
+在一些应用中指需要有个对最邻近的猜测。这种情况下，我们可以用一个不保证能每次都返回绝对正确的最近点的算法，用来提高运算速度或节约存储空间。常常这样的算法大都能找到正确的最近点，但这大大取决于采用点集的分布。
+采用近似查找的算法包括Best Bin First和Balanced Box-Decomposition Tree。
+ε近似最邻近查找是目前流行的打破维数灾难的工具。
+
+
+=== 最邻近距离比 ===
+最邻近距离比不直接用目标点和邻近点的距离作为阈值，而是将与到前一个邻近点的距离相关的比值来作为阈值。这被用在基于内容的图像检索中，通过基于本地特征的相似性的“例子查找”来得到图像。更广泛的用途是在一些匹配问题中。
+
+
+=== 全局最近点 ===
+有时，我们需要找到在整个点集中距离所有点都最近的那个点。把最邻近搜索在所有点上运行一次自然能解决问题，但改进的策略能避免点集中距离信息的冗余，从而更高效地查找。比如：当我们算出了X到Y的距离，我们也同时得到了Y到X的距离，于是结果就能被以后的一次求解直接利用。
+
+
+== 参考文献 ==
+Arya, S., D. M. Mount, N. S. Netanyahu, R. Silverman, and A. Y. Wu. An Optimal Algorithm for Approximate Nearest Neighbor Searching in Fixed Dimensions. Journal of the ACM, vol. 45, no. 6, pp. 891-923
+Zezula, P., Amato, G., Dohnal, V., and Batko, M. Similarity Search - The Metric Space Approach. Springer, 2006. ISBN：0-387-29146-6
+
+
+== 外部链接 ==
+Nearest Neighbors and Similarity Search - a website dedicated to educational materials, software, literature, researchers, open problems and events related to NN searching. Maintained by Yury Lifshits.
+Metric Spaces Library - An open-source C-based library for metric space indexing by Karina Figueroa, Gonzalo Navarro, Edgar Chávez.
+ANN - A Library for Approximate Nearest Neighbor Searching by David M. Mount and Sunil Arya.
+STANN - A Simple Threaded Approximate Nearest Neighbor Search Library in C++ by Michael Connor and Piyush Kumar.
+MESSIF - Metric Similarity Search Implementation Framework by Michal Batko and David Novak.
+OBSearch - Metric Similarity Search（distributed, GPL）. Implementation by Arnoldo Muller, developed during Google Summer of Code 2007.

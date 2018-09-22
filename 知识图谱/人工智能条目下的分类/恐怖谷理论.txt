@@ -1,0 +1,57 @@
+恐怖谷理论（另名诡异谷，英语：Uncanny Valley；日语：不気味の谷现象）是一个关於人类对机器人和非人类物体的感觉的假设。它在1970年由日本机器人专家森政弘提出，但「恐怖谷」一词由恩斯特·詹池於1906年的论文《恐怖谷心理学》中提出，而他的观点被佛洛伊德在1919年的论文《恐怖谷》中阐述，因而成为着名理论。
+森政弘的假设指出，由於机器人与人类在外表、动作上相似，所以人类亦会对机器人产生正面的情感；直到一个特定程度，他们的反应便会突然变得极为负面。哪怕机器人与人类只有一点点的差别，都会显得非常显眼刺眼，整个机器人显得非常僵硬恐怖，使人有面对殭屍的感觉。可是，当机器人和人类的相似度继续上升，相当於普通人之间的相似度的时候，人类对他们的情感反应会再度回到正面，产生人类与人类之间的移情作用。
+「恐怖谷」一词用以形容人类对跟他们相似到特定程度之机器人的排斥反应。而「谷」就是指在研究里「好感度对相似度」的关系图中，在相似度临近100%前，好感度突然坠至反感水平，回升至好感前的那段范围。
+
+
+== 基础理论 ==
+
+恐怖谷现象可以用以下想法解释，如果一个实体「不够拟人」，那它的类人特徵就会显眼并且容易辨认，产生移情作用。在另一方面，要是一个实体「足够拟人」，那它的非类人特徵就会成为显眼的部份，在人类观察者眼中产生一种古怪的感觉。
+另一个可能性是，患病者与屍体跟一些类人机器人有很多视觉上的畸形相似，引出观察者同样的惊慌和情绪反应。这种反应在机器人上比屍体来得更糟，因为人们能轻易明白自己对屍体起厌恶感觉的原因，却无法清楚了解自己为何对机器人产生这种厌恶。行为上的畸形包括疾病的行为特徵、神经学上的状态甚或精神上的机能障碍，於是唤起观察者严重的负面情绪。
+这现象也能用进化心理学的理论解释。首先，处於恐怖谷的实体已足够地拟人，能被视为人类物种的一员。根据进化心理学的理论，经过数百万年的物竞天择，没有被大自然淘汰的现存人类脑部中有一种逻辑偏袒性，提供一种高度能力去感应并且排斥那些反映遗传性疾病或缺乏健康的，整体外表上的人类畸型。因此在有意或无意间，那些反常的类人个体在人类基因库中会有的潜在冲击，同样会引起观察者的警惕。这解释了为甚麽人类通常不觉得能进行性接触的类人实体十分有魅力。（参看下文）
+
+
+== 反面意见 ==
+一些机器人学家激烈批评该理论，认为森政弘对于图表的右端没有任何根据，因为人型机器人只是在近几年才在是在技术上可行的。David Hanson，一名机器人学家曾复制了其女友的头部，认为恐怖谷理论是「伪科学，但被人当成了真正的科学」。Sara Kiesler，一名卡耐基梅隆大学的人机互动专家也曾对此理论表示质疑，认为虽有证据支持该理论，但也有证据反对该理论。
+
+
+== 电影中的恐怖谷 ==
+纵使一般的实验结果及应用仅限於机器人身上，恐怖谷的原理甚至可以伸延应用於电脑动画的角色上。美国的电影评论家Roger Ebert曾应用恐怖谷的概念於电影中类人角色的化妆及服装上，特别在《萤火虫之墓》中。
+有些人认为恐怖谷是制作电脑动画的难处。很多针对电脑动画的影评都引恐怖谷为他们不喜欢某特定电影的原因。这个理论引申出如果希望令人类对某物件的好感度增加，就要尽量在卡通人物的外表上少加入些人类特徵，以免堕入「恐怖谷陷阱」。
+电影中恐怖谷的例子，可以在皮克斯公司的小锡兵中找到。电影中婴孩的脸全由电脑绘出，跟人类差别不大，但却引起小孩子的恐惧和反感。二维影象令恐怖谷的效果减弱，但婴孩的脸部细节依然令人物看起来既邪恶又世故。而《玩具总动员》中的胡迪也被视为恐怖谷的例子。
+在迪士尼公司出品的三维电脑动画片《无敌破坏王》中，『漩涡』（Turbo）这个角色成为恐怖谷应用在反派角色塑造上的成功例子。
+
+
+== 艺术作品中的恐怖谷理论 ==
+对於恐怖谷理论，作家斯科特·麦克劳德在他的作品认识漫画（Understanding Comics）中提出另一个版本的剖析。他指出，一些结构简单的卡通人物，更能为读者保留想像空间及增强他们的认同感，如蛋黄哥。因此，一个简单的卡通人物能使读者代入他们的自我认知；相反地，要是卡通人物的结构渐趋复杂甚至到接近照片的程度，人们会感到那是远离自己的「他」，对认知感到困难，动画《恶之华》便是一例。
+McCloud主要从事具像派艺术，例如电子游戏、漫画与动画，而非像森政弘般探讨真实世界中的类人实体。森政弘的一篇短论文也曾提及艺术作品上的恐怖谷理论：他提出人类图案的艺术「理想化」会比真实人类的脸孔更能令好感回升（以佛的传统表达方式作为例子）。
+
+
+== 游戏中的恐怖谷 ==
+随着游戏机与个人电脑的发展，电子游戏中的恐怖谷现象将会越趋常见，特别在「次世代」的硬体中。
+图形处理器的制造商NVIDIA及ATI（现在为AMD）制造了技术展示样本，描绘出更真实的人类特徵。
+在过去的E3电子娱乐展览中，新力公司曾展示一些绘像已进入恐怖谷的预售硬件。在2000年，新力公司以PlayStation 2的情绪引擎展示了一个真实的老人脸孔。在2005年，新力展示了影星Alfred Monlina在真实灯光散射下的脸孔表情变化。2006年，美商艺电公司展示了以一种崭新表情捕足技术所绘制的泰格·伍兹头部，而这正是她在市场上称之为Playable Universal Capture（或简称为UCAP）的技术。另一件展示品则来自预售的"Heavy Rain"。电影中展示一个女人正聆听游戏的一部份。
+
+
+== 参考资料 ==
+
+
+== 外部连结 ==
+Mori, Masahiro (1970). Bukimi no tani The uncanny valley (K. F. MacDorman & T. Minato, Trans.). Energy, 7（4）, 33–35. (Originally in Japanese)
+Mori, Masahiro (2005). On the Uncanny Valley. Proceedings of the Humanoids-2005 workshop: Views of the Uncanny Valley. 5 December 2005, Tsukuba, Japan.
+MacDorman, Karl F.（2005）. Androids as an experimental apparatus: Why is there an uncanny valley and can we exploit it? CogSci-2005 Workshop: Toward Social Mechanisms of Android Science, 106-118. (An English translation of Mori's "The Uncanny Valley" made by Karl MacDorman and Takashi Minato appears in Appendix B of the paper.)
+MacDorman, Karl F. & Ishiguro, H.（2006）. The uncanny advantage of using androids in cognitive science research. Interaction Studies, 7（3）, 297-337.
+MacDorman, K. F.（2006）. Subjective ratings of robot video clips for human likeness, familiarity, and eeriness: An exploration of the uncanny valley. ICCS/CogSci-2006 Long Symposium: Toward Social Mechanisms of Android Science. July 26, 2005. Vancouver, Canada.
+IEEE-RAS Humanoids-2005 Workshop: Views on the Uncanny Valley. Was held in Tsukuba, Japan, near Tokyo on December 5, 2005.
+The Man Who Mistook His Girlfriend For A Robot (Dan Ferber, Popular Science, September 2003)
+The Uncanny Valley（Dave Bryant）
+Almost too human and lifelike for comfort - research journal for an uncanny valley PhD project
+Relation between motion and appearance is communication between androids and humans
+Android Science video, the Discovery Channel, 24 March 2005, discusses android science, the uncanny valley and features an Actroid.
+Wired article: "Why is this man smiling?", June 2002.
+The Polar Express: A Virtual Train Wreck, Part 1 - Animation Director Ward Jenkins discusses in length about the use of motion capture in the film. In Part 2, he tries to "fix" the uncanny valley problem by using Photoshop to tweak some of the characters in the film.
+
+
+== 参见 ==
+机器人
+人工智能
+文乐
