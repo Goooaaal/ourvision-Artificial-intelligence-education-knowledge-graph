@@ -115,53 +115,6 @@ CREATE (entity1)-[:RELATION { type: line.relation }]->(entity2)
 
 
 
-以上步骤是导入爬取到的关系
-
-
-
-2. 下载词向量模型：http://s3-us-west-1.amazonaws.com/fasttext-vectors/wiki.zh.zip  
-  将wiki.zh.bin放入 KNN_predict 目录 。 （如果只是为了运行项目，步骤2可以不做，预测结果已经离线处理好了）
-
-
-
-3. 进入demo/Model/neo_models.py,修改第9行的neo4j账号密码，改成你自己的
-4. 进入demo目录，然后运行脚本：
-
-```
-sudo sh django_server_start.sh
-```
-
-这样就成功的启动了django。我们进入8000端口主页面，输入文本，即可看到以下命名实体和分词的结果（确保django和neo4j都处于开启状态）
-
-
-
-### 实体查询
-
-实体查询部分，我们能够搜索出与某一实体相关的实体，以及它们之间的关系：
-![image](https://raw.githubusercontent.com/CrisJk/SomePicture/master/blog_picture/entitySearch.png)
-
-![](https://raw.githubusercontent.com/CrisJk/SomePicture/master/blog_picture/entitySearch2.png)
-
-### 关系查询
-
-关系查询即查询三元组关系entity1-[relation]->entity2 , 分为如下几种情况:
-
-* 指定第一个实体entity1
-* 指定第二个实体entity2
-* 指定第一个实体entity1和关系relation
-* 指定关系relation和第二个实体entity2
-* 指定第一个实体entity1和第二个实体entity2
-* 指定第一个实体entity1和第二个实体entity2以及关系relation
-
-下图所示，是指定关系relation和第二个实体entity2的查询结果
-
-![](https://raw.githubusercontent.com/CrisJk/SomePicture/master/blog_picture/relationSearch.png)
-
-
-
-![](https://raw.githubusercontent.com/CrisJk/SomePicture/master/blog_picture/relationSearch2.png)
-
-
 
 
 ## 思路
