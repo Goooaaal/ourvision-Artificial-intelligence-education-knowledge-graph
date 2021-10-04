@@ -3,8 +3,8 @@
 from django.shortcuts import render
 from django.views.decorators import csrf
  
-
+# 
 def new_index(request):  # index页面需要一开始就加载的内容写在这里
-	context = {}
+	context = {} #its a blank dictionary....
 	return render(request, 'new/index.html', context)
 	
